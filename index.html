@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     
+    <!-- CONTEÚDO -->
+    <main>
+
+        <div class="conteudo-formulario">
+
+            <h2>Login</h2>
+
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+            <form action="cadastro.php">
+
+                <!-- EMAIL -->
+                <div class="caixa-email">
+
+                    <label for="email">
+
+                        <i class="material-icons">person</i>
+
+                    </label>
+
+                    <input type="email" name="email" id="email" required autocomplete="email" placeholder="seu e-mail">
+
+                </div>
+
+                <!-- SENHA -->
+                <div class="caixa-senha">
+
+                    <label for="senha">
+
+                        <i class="material-icons">vpn_key</i>    
+
+                    </label>
+
+                    <input type="password" name="senha" id="senha" required autocomplete="current-password" placeholder="sua senha" minlength="8">
+
+                </div>
+
+                <!-- ENTRAR -->
+                <div class="caixa-entrar">
+
+                    <input type="submit" value="Entrar">
+
+                </div>
+
+            </form>
+
+            <a href="#">Esqueci a senha <i class="material-icons">email</i></a>
+
+        </div>
+
+        <div class="imagem"></div>
+
+    </main>
+
 </body>
 </html>

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 991px) {
+    main {
+        flex-direction: row-reverse;
+        width: 790px;
+        height: 280px;
+    }
+
+    .conteudo-formulario h2 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    main .conteudo-formulario p {
+        margin-bottom: 0.2rem;
+        font-size: 0.8em;
+    }
+
+    main .conteudo-formulario {
+        width: 70%;
+    }
+
+    form .caixa-email, form .caixa-senha, form .caixa-entrar {
+        margin-bottom: 5px;
+    }
+    
+    main .imagem {
+        width: 30%;
+        border-radius: 20px 0px 0px 20px;
+        border-right: 1px solid #9da5a4;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color:#5f2c82;
+        background-image: none;
+    }
+
+    main {
+        width: 250px;
+        height: 510px;
+        flex-direction: column-reverse;
+        padding-bottom: 1rem;
+    }
+
+    main .conteudo-formulario{
+        width: 100%;
+        height: 60%;
+    }
+
+    main .imagem {
+        width: 100%;
+        height: 40%;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
